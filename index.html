@@ -317,7 +317,7 @@ else {
         <input
             id="colorInput"
             type="text"
-            placeholder="Enter your band color"
+            placeholder="Enter your team code name"
             autocomplete="off"
         >
 
@@ -333,7 +333,7 @@ else {
 
     function checkColor() {
 
-        const enteredColor =
+        const enteredCodeName =
             document
             .getElementById("colorInput")
             .value
@@ -349,7 +349,17 @@ else {
 
         /* CORRECT COLOR */
 
-        if (enteredColor === color) {
+        const expectedCodeName = {
+            red: "dragon's tail",
+            blue: "siren's path",
+            green: "jungle cipher",
+            yellow: "golden quest",
+            purple: "phantom trail",
+            orange: "inferno run",
+            pink: "rose rogue"
+        }[color];
+
+        if (enteredCodeName === expectedCodeName) {
 
             message.className = "message success";
 
@@ -378,7 +388,7 @@ else {
             message.className = "message error";
 
             message.textContent =
-                "✗ Incorrect color. This checkpoint belongs to another team. Check your wristband and try again.";
+                "✗ Incorrect code name. Check your team code name and try again.";
 
             clueBox.className = "hidden";
         }
