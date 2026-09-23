@@ -14,14 +14,7 @@ body {
     margin: 0;
     min-height: 100vh;
     font-family: Arial, sans-serif;
-
-    /* Treasure map background */
-    background-image: url("treasure-map.jpg");
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-
+    background: #f3f3f3;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,13 +23,11 @@ body {
 
 .card {
     width: min(460px, 100%);
-    background: rgba(255, 248, 225, 0.94);
-    border: 1px solid rgba(112, 73, 28, 0.25);
+    background: white;
     border-radius: 20px;
     padding: 28px;
-    box-shadow: 0 8px 30px rgba(75, 45, 10, 0.28);
+    box-shadow: 0 8px 30px #0002;
     text-align: center;
-    backdrop-filter: blur(2px);
 }
 
 h1 {
@@ -141,7 +132,7 @@ const routes = {
 
             A3: "“Return to where coders begin their day,\nBut don't enter through the usual way.\nLeave the front and look around,\nThe hidden side of your first stop is where you're bound.”",
 
-            A4: "What begins with a line, yet dreams of a space?\nWhat starts as an idea, yet finds its place?\nWhat has no walls, yet speaks of a room,\nAnd lives on a page before it can bloom?\n\nWhere lines become limits, and limits define,\nWhere form meets function, and thought meets design,\nWhere empty space waits for a purpose to be,\nAnd imagination takes shape for the world to see.\n\nYou have wandered through places of knowledge and skill,\nThrough motion, through numbers, through spaces so still.\nBut the end of your journey is not marked by a sign,\nIt waits where the abstract becomes something defined.\n\nSeek the place where two dimensions dream of three,\nWhere an idea becomes more than what the eye can see.\nAnd when you believe that you've uncovered the door,\nStep inside, for the answer lies within, not before.\n\nYour final clue awaits."
+            A4: "Go where two dimensions secretly become three."
         }
     },
 
@@ -161,7 +152,7 @@ const routes = {
 
             B3: "“You found the statue, but don't stop to rest,\nYour next destination is where students gather best.\nAcross from the place where minds meet,\nFind the spot where snacks and conversations meet.”",
 
-            B4: "What begins with a line, yet dreams of a space?\nWhat starts as an idea, yet finds its place?\nWhat has no walls, yet speaks of a room,\nAnd lives on a page before it can bloom?\n\nWhere lines become limits, and limits define,\nWhere form meets function, and thought meets design,\nWhere empty space waits for a purpose to be,\nAnd imagination takes shape for the world to see.\n\nYou have wandered through places of knowledge and skill,\nThrough motion, through numbers, through spaces so still.\nBut the end of your journey is not marked by a sign,\nIt waits where the abstract becomes something defined.\n\nSeek the place where two dimensions dream of three,\nWhere an idea becomes more than what the eye can see.\nAnd when you believe that you've uncovered the door,\nStep inside, for the answer lies within, not before.\n\nYour final clue awaits."
+            B4: "Go where two dimensions secretly become three."        
         }
     },
 
@@ -181,7 +172,7 @@ const routes = {
 
             C3: "“Leave the cars behind,\nand follow the path where campus life gets a little more private.\nYour next clue waits where questions are answered,\njust beyond the girls’ residence. Find the little office where problems find a name.”",
 
-            C4: "What begins with a line, yet dreams of a space?\nWhat starts as an idea, yet finds its place?\nWhat has no walls, yet speaks of a room,\nAnd lives on a page before it can bloom?\n\nWhere lines become limits, and limits define,\nWhere form meets function, and thought meets design,\nWhere empty space waits for a purpose to be,\nAnd imagination takes shape for the world to see.\n\nYou have wandered through places of knowledge and skill,\nThrough motion, through numbers, through spaces so still.\nBut the end of your journey is not marked by a sign,\nIt waits where the abstract becomes something defined.\n\nSeek the place where two dimensions dream of three,\nWhere an idea becomes more than what the eye can see.\nAnd when you believe that you've uncovered the door,\nStep inside, for the answer lies within, not before.\n\nYour final clue awaits."
+            C4: "Go where two dimensions secretly become three."        
         }
     },
 
@@ -201,7 +192,7 @@ const routes = {
 
             D3: "“Not every treasure is gold, but money may be near,\nFind the place which,\nLooks familiar sign to a financial institution,\nYour next clue awaits at this campus destination.”",
 
-            D4: "What begins with a line, yet dreams of a space?\nWhat starts as an idea, yet finds its place?\nWhat has no walls, yet speaks of a room,\nAnd lives on a page before it can bloom?\n\nWhere lines become limits, and limits define,\nWhere form meets function, and thought meets design,\nWhere empty space waits for a purpose to be,\nAnd imagination takes shape for the world to see.\n\nYou have wandered through places of knowledge and skill,\nThrough motion, through numbers, through spaces so still.\nBut the end of your journey is not marked by a sign,\nIt waits where the abstract becomes something defined.\n\nSeek the place where two dimensions dream of three,\nWhere an idea becomes more than what the eye can see.\nAnd when you believe that you've uncovered the door,\nStep inside, for the answer lies within, not before.\n\nYour final clue awaits."
+            D4: "Go where two dimensions secretly become three."        
         }
     },
 
@@ -221,7 +212,7 @@ const routes = {
 
             E3: "“Leave behind the signals and follow the path of authority.\nWhere decisions are made and the college's affairs are set in motion,\nlook nearby for a place dressed in the color of leaves.\nYour next clue waits within.”",
 
-            E4: "What begins with a line, yet dreams of a space?\nWhat starts as an idea, yet finds its place?\nWhat has no walls, yet speaks of a room,\nAnd lives on a page before it can bloom?\n\nWhere lines become limits, and limits define,\nWhere form meets function, and thought meets design,\nWhere empty space waits for a purpose to be,\nAnd imagination takes shape for the world to see.\n\nYou have wandered through places of knowledge and skill,\nThrough motion, through numbers, through spaces so still.\nBut the end of your journey is not marked by a sign,\nIt waits where the abstract becomes something defined.\n\nSeek the place where two dimensions dream of three,\nWhere an idea becomes more than what the eye can see.\nAnd when you believe that you've uncovered the door,\nStep inside, for the answer lies within, not before.\n\nYour final clue awaits."
+            E4: "Go where two dimensions secretly become three."
         }
     },
 
@@ -241,7 +232,7 @@ const routes = {
 
             F3: "“Where rallies begin and feathers take flight,\nPlayers move swiftly from left to right.\nClose to a place where hungry crowds convene,\nFind the spot hidden within the scene.”",
 
-            F4: "What begins with a line, yet dreams of a space?\nWhat starts as an idea, yet finds its place?\nWhat has no walls, yet speaks of a room,\nAnd lives on a page before it can bloom?\n\nWhere lines become limits, and limits define,\nWhere form meets function, and thought meets design,\nWhere empty space waits for a purpose to be,\nAnd imagination takes shape for the world to see.\n\nYou have wandered through places of knowledge and skill,\nThrough motion, through numbers, through spaces so still.\nBut the end of your journey is not marked by a sign,\nIt waits where the abstract becomes something defined.\n\nSeek the place where two dimensions dream of three,\nWhere an idea becomes more than what the eye can see.\nAnd when you believe that you've uncovered the door,\nStep inside, for the answer lies within, not before.\n\nYour final clue awaits."
+            F4: "Go where two dimensions secretly become three."
         }
     },
 
@@ -261,7 +252,7 @@ const routes = {
 
             G3: "“Seek the place where unseen forces are designed.\nNot signals that travel, nor messages that flow,\nBut the power that makes machines come alive and go.\nWhere voltage meets current and circuits command.”",
 
-            G4: "What begins with a line, yet dreams of a space?\nWhat starts as an idea, yet finds its place?\nWhat has no walls, yet speaks of a room,\nAnd lives on a page before it can bloom?\n\nWhere lines become limits, and limits define,\nWhere form meets function, and thought meets design,\nWhere empty space waits for a purpose to be,\nAnd imagination takes shape for the world to see.\n\nYou have wandered through places of knowledge and skill,\nThrough motion, through numbers, through spaces so still.\nBut the end of your journey is not marked by a sign,\nIt waits where the abstract becomes something defined.\n\nSeek the place where two dimensions dream of three,\nWhere an idea becomes more than what the eye can see.\nAnd when you believe that you've uncovered the door,\nStep inside, for the answer lies within, not before.\n\nYour final clue awaits."
+            G4: "Go where two dimensions secretly become three."
         }
     }
 
@@ -344,10 +335,10 @@ else {
 
         const enteredCodeName =
             document
-                .getElementById("colorInput")
-                .value
-                .toLowerCase()
-                .trim();
+            .getElementById("colorInput")
+            .value
+            .toLowerCase()
+            .trim();
 
         const message =
             document.getElementById("message");
