@@ -310,14 +310,14 @@ else {
         <h1>🔐 Checkpoint ${checkpoint}</h1>
 
         <p class="checkpoint">
-            Enter the color printed on your team's
-            wristband to unlock the clue.
+            A secret name will light the way, 
+            Reveal your code and start the play!
         </p>
 
         <input
             id="colorInput"
             type="text"
-            placeholder="Enter your team code name"
+            placeholder="Whisper your secret name…"
             autocomplete="off"
         >
 
@@ -364,7 +364,7 @@ else {
             message.className = "message success";
 
             message.textContent =
-                "✓ Correct color! Your clue has been unlocked.";
+                "✓ The secret was spoken! The path ahead is yours…";
 
             clueBox.className = "clue";
 
@@ -388,7 +388,7 @@ else {
             message.className = "message error";
 
             message.textContent =
-                "✗ Incorrect code name. Check your team code name and try again.";
+                "✗ The gate remains sealed… that is not the secret name. Try again!";
 
             clueBox.className = "hidden";
         }
